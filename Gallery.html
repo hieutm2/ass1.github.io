@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- NAV BAR -->
+
+
+</head>
+
+<!-- Body Content -->
+
+<body>
+  <!-------- header------->
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="../Home/Home.html">PHIM VIP</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <!-- Left margin -->
+        <li class="nav-item">
+          <a class="nav-link" href="../Home/Home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Gallery/Gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Contact/Contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../About/about-us.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <!--------End header------------>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      /* IE 10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE 10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create two equal columns that sits next to each other */
+    .column {
+      -ms-flex: 50%;
+      /* IE 10 */
+      flex: 50%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 10px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+
+    .listImage {
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 410px 410px 410px;
+      grid-template-rows: 350px 350px 350px;
+      grid-row-gap: 150px;
+    }
+
+    .item {
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  </head>
+
+  <body>
+
+
+
+
+
+
+
+    <!-- Header -->
+    <div class="header" id="myHeader">
+      <h1>Art Collection</h1>
+      <p>Click on the buttons to change the grid view.</p>
+      <button id="bt1" class="btn ">1</button>
+      <button id="bt2" class="btn ">2</button>
+      <button id="bt3" class="btn">3</button>
+    </div>
+
+    <!-- Photo Grid -->
+
+    <div class="row">
+      <div class="column1">
+        <div class="listImage">
+          <img src="Avengersr.jpg" style="width:380px;height: 480px;">
+          <img src="haytraocho.jpg" style="width:380px;height: 480px;">
+          <img src="Hellboy .jpg" style="width:380px;height: 480px;">
+
+          <img src="Nhilangthan.jpg" style="width:380px;height: 480px;">
+          <img src="nonam.jpg" style="width:380px;height: 480px;">
+          <img src="thamyeu.jpg" style="width:380px;height: 480px;">
+
+        </div>
+      </div>
+
+      <div class="column2">
+        <div class="listImage">
+          <img src="Trumcom.jpg" style="width:380px;height: 480px;">
+          <img src="Avengersr.jpg" style="width:380px;height: 480px;">
+          <img src="haytraocho.jpg" style="width:380px;height: 480px;">
+
+          <img src="nonam.jpg" style="width:380px;height: 480px;">
+          <img src="thamyeu.jpg" style="width:380px;height: 480px;">
+          <img src="Nhilangthan.jpg" style="width:380px;height: 480px;">
+
+
+
+        </div>
+      </div>
+
+      <div class="column3">
+        <div class="listImage">
+          <img src="Nhilangthan.jpg" style="width:380px;height: 480px;">
+          <img src="nonam.jpg" style="width:380px;height: 480px;">
+          <img src="Trumcom.jpg" style="width:380px;height: 480px;">
+
+          <img src="thamyeu.jpg" style="width:380px;height: 480px;">
+          <img src="haytraocho.jpg" style="width:380px;height: 480px;">
+          <img src="Avengersr.jpg" style="width:380px;height: 480px;">
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+
+      $(document).ready(function () {
+
+        $(".column1").show();
+        $(".column2").hide();
+        $(".column3").hide();
+        $("#bt1").css('background-color', '#999');
+
+
+        $("#bt1").click(function () {
+          $(".column1").show();
+          $(".column2").hide();
+          $(".column3").hide();
+          $("#bt1").css('background-color', '#999');
+          $("#bt2").css('background-color', '#f1f1f1');
+          $("#bt3").css('background-color', '#f1f1f1');
+
+        });
+        $("#bt2").click(function () {
+          $(".column1").hide();
+          $(".column2").show();
+          $(".column3").hide();
+          $("#bt2").css('background-color', '#999');
+          $("#bt1").css('background-color', '#f1f1f1');
+          $("#bt3").css('background-color', '#f1f1f1');
+
+        });
+        $("#bt3").click(function () {
+          $(".column1").hide();
+          $(".column2").hide();
+          $(".column3").show();
+          $("#bt3").css('background-color', '#999');
+          $("#bt2").css('background-color', '#f1f1f1');
+          $("#bt1").css('background-color', '#f1f1f1');
+
+        });
+
+
+
+
+      });
+
+    </script>
+  </body>
+
+</html>
